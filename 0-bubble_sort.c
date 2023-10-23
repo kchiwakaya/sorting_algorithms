@@ -1,7 +1,6 @@
 include "sort.h"
-
 /**
- * swap_ints - swap two integers in an array.
+ * swap - swap two integers in an array.
  * @a: first integer to swap.
  * @b: second integer to swap.
  */
@@ -36,7 +35,7 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[i] > array[i + 1])
 			{
-				swap_ints(array + i, array + i + 1);
+				swap(array + i, array + i + 1);
 				print_array(array, size);
 				bubbly = false;
 			}
