@@ -1,4 +1,4 @@
-include "sort.h"
+#include "sort.h"
 /**
  * swap - swap two integers in an array.
  * @a: first integer to swap.
@@ -23,21 +23,21 @@ void swap(int *a, int *b)
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, len = size;
-	bool bubbly = false;
+	int bubbly = 0;
 
 	if (array == NULL || size < 2)
 		return;
 
-	while (bubbly == false)
+	while (bubbly == 0)
 	{
-		bubbly = true;
+		bubbly = 1;
 		for (i = 0; i < len - 1; i++)
 		{
 			if (array[i] > array[i + 1])
 			{
 				swap(array + i, array + i + 1);
 				print_array(array, size);
-				bubbly = false;
+				bubbly = 0;
 			}
 		}
 		len--;
