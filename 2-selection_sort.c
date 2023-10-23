@@ -1,23 +1,23 @@
 #include "sort.h"
 /**
- * swap - Swaps two integers.
- * @a: first integer.
- * @b: The second integer to swap.
+ * swap - swaps two integers.
+ * @int1: first integer.
+ * @int2: The second integer to swap.
  */
-void swap(int *a, int *b)
+void swap(int *int1, int *int2)
 {
 	int temp;
 
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	temp = *int1;
+	*int1 = *int2;
+	*int2 = temp;
 }
 
 /**
- * selection_sort - Sort an array of integers in ascending order
- *                  using the selection sort algorithm.
- * @array: An array of integers.
- * @size: The size of the array.
+ * selection_sort - sort array of ints in ascending order
+ *                  using selection sort algorithm.
+ * @array: array of integers.
+ * @size: size of the array.
  */
 void selection_sort(int *array, size_t size)
 {
