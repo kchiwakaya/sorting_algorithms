@@ -1,5 +1,4 @@
 #include "sort.h"
-
 /**
  * swap - Swaps two integers.
  * @a: first integer.
@@ -9,7 +8,7 @@ void swap(int *a, int *b)
 {
 	int temp;
 
-	tmp = *a;
+	temp = *a;
 	*a = *b;
 	*b = temp;
 }
