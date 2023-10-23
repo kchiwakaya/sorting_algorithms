@@ -67,7 +67,7 @@ void lomutoSort(int *array, size_t size, int sub1, int sub2)
 	{
 		partion = lomuto_partn(array, size, sub1, sub2);
 		lomutoSort(array, size, sub1, sub2 - 1);
-		lomutoSort(array, size, part + 1, sub2);
+		lomutoSort(array, size, partion + 1, sub2);
 	}
 }
 
